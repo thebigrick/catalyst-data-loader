@@ -1,0 +1,43 @@
+{
+  "name": "@bigcommerce/catalyst-data-loader",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --max-warnings 0",
+    "build": "tsup"
+  },
+  "engines": {
+    "node": "^20.0.0 || ^22.0.0"
+  },
+  "dependencies": {
+    "dataloader": "^2.2.3",
+    "lru_map": "^0.4.1"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": false
+    },
+    "gql.tada": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@bigcommerce/eslint-config": "^2.11.0",
+    "@bigcommerce/eslint-config-catalyst": "workspace:^",
+    "@types/node": "^22.14.1",
+    "@types/react": "^19.1.1",
+    "prettier": "^3.5.3",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
+  }
+}
